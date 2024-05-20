@@ -1,0 +1,19 @@
+Fedora stores CA-Trusted Certs in /usr/share/pki/ca-trust-source/anchors
+https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/
+
+Use
+sudo trust anchor --store CA.pem
+
+
+and
+https://docs.oracle.com/cd/E19509-01/820-3503/ggezy/index.html
+
+
+BUTTTT for Unreal in specific, they allow you to supply your own cert via
+
+https://forums.unrealengine.com/t/how-to-http-createrequest-w-self-signed-cert/476937/5
+Don't worry, is on archive.org
+
+and here is the important bit
+
+Instead, you can generate a self-signed CA and sign your server certificate with it, then copy your CA certificate to /Content/Certificates/cacert.pem (and export it in packaged build).
